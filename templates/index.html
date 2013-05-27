@@ -1,0 +1,97 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Pragma" content="no-cache">
+    <title>Guitar Pro Viewer</title>
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.8/themes/base/jquery-ui.css"
+        type="text/css" media="all" />
+    <link type="text/css" rel="Stylesheet" href="../static/lib/alphaTab.css" />
+    <link type="text/css" rel="Stylesheet" href="../static/css/style.css" />
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.8/jquery-ui.min.js"></script>
+
+    <script type="text/javascript" src="../static/lib/jquery.jplayer.min.js"></script>
+
+    <!-- <script type="text/javascript" src="lib\alphaTab.min.js"></script>-->
+
+    <script type="text/javascript" src="../static/alphaTab.js"></script>
+
+    <script type="text/javascript" src="../static/lib\jquery.alphaTab.min.js"></script>
+
+    <script type="text/javascript" src="../static/js\jquery.alphaTab.instrument.js"></script>
+
+    <script type="text/javascript" src="../static/js\jquery.alphaTab.jPlayer.js"></script>
+
+    <script type="text/javascript" src="../static/js\songsterr.js"></script>
+
+    <script type="text/javascript" src="../static/js\main.js"></script>
+
+</head>
+<body>
+    <!-- Loading panel -->
+    <div id="loading">
+        Loading...
+    </div>
+    <!-- Control panel -->
+    <div id="controlpanel">
+        <center>
+            <button id="search_button">
+                search</button>
+            <button id="play_button">
+                play</button>
+            <button id="pause_button">
+                pause</button>
+            <button id="stop_button">
+                stop</button>
+            <button id="mixer_button">
+                mixer</button>
+            <div id="debug">
+            </div>
+        </center>
+    </div>
+    <!-- alphaTab -->
+    <div id="mainpanel">
+        <center>
+            <div class="alphaTab">
+            </div>
+        </center>
+    </div>
+    <!-- Hiden panel - mixer -->
+    <div id="mixerpanel"">
+        <div id="mixer_header">
+            <div class="mixer_header_name">
+                Name
+            </div>
+            <div class="mixer_header_checkbutton">
+                S
+            </div>
+            <div class="mixer_header_checkbutton">
+                M
+            </div>
+            <div>
+                Volume
+            </div>
+        </div>
+        <hr />
+        <div id="mixer_tracks">
+        </div>
+    </div>
+    <!-- Hiden panel - search -->
+    <div id="searchpanel">
+        <div id="serach">
+            <input id="keyword" type="text" />
+            <br />
+            <a id="searchsong" href="#">Search Song</a>&nbsp&nbsp&nbsp<a id="searchartist" href="#">Search
+                Artist</a>
+        </div>
+        <hr />
+        <div id="result">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,208 @@
+body
+{
+    font-family: Georgia;
+    font-family: Arial, Verdana, Helveticy, sans-serif;
+    font-size: 12px;
+    color: #575757;
+    background: #efefef;
+}
+
+::-webkit-scrollbar
+{
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-button:start:decrement, ::-webkit-scrollbar-button:end:increment
+{
+    height: 30px;
+    display: block;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-track-piece
+{
+    background-color: #3b3b3b;
+    -webkit-border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:vertical
+{
+    height: 50px;
+    background-color: #666;
+    border: 1px solid #eee;
+    -webkit-border-radius: 6px;
+}
+
+#loading
+{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    display: none;
+    background-color: red;
+    color: white;
+    margin: 5px;
+    padding: 3px;
+}
+
+#mainpanel
+{
+    overflow: auto;
+}
+
+#mixerpanel
+{
+    position: absolute;
+    width: 450px;
+    top: 50px;
+    right: 0px;
+    display: none;
+    filter: alpha(opacity=85);
+    opacity: .85;
+    z-index: 999;
+    text-align: center;
+    color: White;
+    background: #000000;
+    -webkit-border-top-left-radius: 20px;
+    -webkit-border-bottom-left-radius: 20px;
+    border: 1px solid #111111;
+    padding: 5px;
+    color: #cccccc;
+}
+
+.mixer_header_name
+{
+    float: left;
+    width: 300px;
+}
+
+.mixer_header_checkbutton
+{
+    float: left;
+    width: 25px;
+}
+
+.mixer_track
+{
+    height: 20px;
+}
+
+.mixer_track_name
+{
+    float: left;
+    width: 300px;
+    height: 20px;
+}
+
+.mixer_track_name span
+{
+    line-height: 80%;
+    cursor: pointer;
+}
+
+.mixer_track_name span.selected
+{
+    line-height: 80%;
+    cursor: pointer;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 13px;
+}
+
+.mixer_checkbutton
+{
+    float: left;
+    width: 25px;
+}
+
+.mixer_checkbutton label
+{
+    width: 10px;
+    cursor: pointer;
+}
+
+.mixer_track_volume_bar
+{
+    float: left;
+    background-color: White;
+    width: 100px;
+    height: 10px;
+    cursor: pointer;
+    top: 5px;
+}
+
+.mixer_track_volume_bar_value
+{
+    background-color: Gray;
+    width: 80px;
+    height: 10px;
+}
+
+#searchpanel
+{
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    display: none;
+    background: #000000;
+    border: 1px solid #111111;
+    -webkit-border-top-right-radius: 20px;
+    -webkit-border-bottom-right-radius: 20px;
+    width: auto;
+    height: auto;
+    padding: 30px 30px 30px 30px;
+    filter: alpha(opacity=85);
+    opacity: .85;
+    overflow: auto;
+}
+
+#searchpanel p
+{
+    margin: 0 0 15px 0;
+    padding: 0;
+    color: #cccccc;
+}
+
+#searchpanel a, #searchpanel a:visited
+{
+    margin: 0;
+    padding: 0;
+    color: White;
+    text-decoration: none;
+}
+
+#searchpanel a:hover, #searchpanel a:visited:hover
+{
+    margin: 0;
+    padding: 0;
+    color: Gray;
+    text-decoration: none;
+}
+
+#searchpanel ul
+{
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+    list-style: disc;
+}
+#searchpanel .songname
+{
+    color: #0081cb;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 13px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+#searchpanel .artistname
+{
+    font-style: italic;
+    float: right;
+    color: inherit;
+    display: inline;
+    cursor: pointer;
+    white-space: nowrap;
+}
